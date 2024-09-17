@@ -1,20 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>LES News Beta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreelanceConnect</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1><b><i>Welcome to LES News, your personal website for all the latest news about LES</i></b></h1>
-    <img src="LES.png" width="1000" height="500" alt="LES News Image" />
-    <hr>
-    <p><b>LES News is a website made to keep you updated on all the new school rules, news, and more! The goal of the LES News website is to make sure students are aware of the latest rules, incidents, and news from a neutral standpoint, not to spread gossip, so please don't use it as such! Violators will be terminated and will not have a chance to appeal their ban!</b></p>
-    <p>On September 24, 2024, the founder of LES News released it as an official website as a coding project after learning HTML and Python. This website will upload multiple news articles every week on all of the changes made in LES that week.</p>
-    <h2>News:</h2>
-    <h3>Other links:</h3>
-    <hr>
-    <a href="https://lesson.lesbg.com/index.php" target="_blank" title="This will take you to LESSON.lesbg.com">Go to LESSON</a>
-    <hr>
-    <hr>
-    <a href="https://www.lesbg.com/site/" target="_blank" title="This will take you to the official website of LES">Official Website</a>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>FreelanceConnect</h1>
+            <p>Connecting talents with the right opportunities</p>
+        </div>
+    </header>
+
+    <!-- Freelancer Submission Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <h2>Submit Your Freelance Application</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="skills">Skills:</label>
+                <textarea id="skills" name="skills" rows="4" required></textarea>
+
+                <label for="portfolio">Portfolio/Website (optional):</label>
+                <input type="url" id="portfolio" name="portfolio">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Featured Jobs/Projects Section -->
+    <section class="projects-section">
+        <div class="container">
+            <h2>Featured Jobs & Projects</h2>
+            <div class="project-card">
+                <h3>Website Development</h3>
+                <p>Looking for a web developer to build an e-commerce site. Skills required: HTML, CSS, JavaScript.</p>
+                <button>Apply Now</button>
+            </div>
+
+            <div class="project-card">
+                <h3>Graphic Design</h3>
+                <p>Need a creative graphic designer for branding. Skills required: Adobe Illustrator, Photoshop.</p>
+                <button>Apply Now</button>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LebWork</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to LebWork</h1>
+            <h2>Connecting talents with the right opportunities</h2>
+            <hr>
+        </div>
+    </header>
+
+    <!-- Freelancer Submission Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <h1>Looking to get hired?</h1>
+            <h2>Submit your Freelance Application and find someone that will pay you handsomely for your work!</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfLnAqGiwD_IOUi2V-tmgIlAqpkVzyK1QXeBHYgiNczgtbdw/viewform?embedded=true" width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <hr>
+        </div>
+    </section>
+
+    <!-- Freelance Finder Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <h1>Looking for people to hire?</h1>
+            <h2>Submit what you're looking for and we will find someone that matches all your needs almost instantly!</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDCe29aH8Goww5Ut4JQVXRthJkkyPP0t63oCOrklHf-tWvEA/viewform?embedded=true" width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </section>
+</body>
+</html>
+
+/* General Body Styling */
+body {
+    background-color: #f0f0f5; /* Light grey background */
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Dark grey text */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #004aad; /* Dark blue background */
+    color: white; /* White text */
+    padding: 20px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-section {
+    background-color: #fff; /* White background for forms */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    border-radius: 10px;
+    border: 2px solid #004aad;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid #004aad;
+    margin: 30px auto;
+}
+

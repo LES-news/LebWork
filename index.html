@@ -4,35 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LebWork</title>
-
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+        h2 {
+            color: green;
+            text-align: center;
+        }
+        .form-section {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            width: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        iframe {
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1><center>Welcome to LebWork</center></h1>
-            <h2><center>Connecting talents with the right opportunities</center></h2>
-            <h3><center>-------------------------------------------------------------------------------------------</center></h3>
-        </div>
+        <h1>Welcome to LebWork</h1>
+        <h2>Connecting talents with the right opportunities</h2>
+        <hr>
     </header>
 
-    <!-- Freelancer Submission Form Sectione -->
+    <!-- Freelancer Submission Form Section -->
     <section class="form-section">
-        <div class="container">
-            <h1><center>Looking to get hired?</center></h1>
-            <h2><center>Submit your Freelance Application and find someone that will pay you handsomely for your work!</center></h2>
-          <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfLnAqGiwD_IOUi2V-tmgIlAqpkVzyK1QXeBHYgiNczgtbdw/viewform?embedded=true" width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-             </div></center> 
-        <!-- Freelance Finder Form Section -->
-         <h3><center>-------------------------------------------------------------------------------------------</center></h3>
-         <section class="form-section">
-        <div class="container">
-            <h1><center>Looking for people to hire?</center></h1>
-            <h2><center>Submit what you're looking for and we will find someone that matches all your needs almost instantely!</center></h2>
-          <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDCe29aH8Goww5Ut4JQVXRthJkkyPP0t63oCOrklHf-tWvEA/viewform?embedded=true" width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-             </div></center> 
-        
+        <h1>Looking to get hired?</h1>
+        <h2>Submit your Freelance Application</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfLnAqGiwD_IOUi2V-tmgIlAqpkVzyK1QXeBHYgiNczgtbdw/viewform?embedded=true" width="400" height="600" frameborder="0">Loading…</iframe>
+    </section>
+
+    <hr>
+
+    <!-- Freelance Finder Form Section -->
+    <section class="form-section">
+        <h1>Looking for people to hire?</h1>
+        <h2>Submit your requirements</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDCe29aH8Goww5Ut4JQVXRthJkkyPP0t63oCOrklHf-tWvEA/viewform?embedded=true" width="400" height="600" frameborder="0">Loading…</iframe>
     </section>
 </body>
 </html>

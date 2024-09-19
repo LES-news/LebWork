@@ -12,8 +12,7 @@
             padding: 0;
         }
         header {
-            background-color: #007BFF;
-            color: white;
+            color: #333;
             text-align: center;
             padding: 20px 0;
         }
@@ -39,7 +38,7 @@
         nav a:hover {
             text-decoration: underline;
         }
-        .form-section {
+        .form-section, .tutors-list, .students-list {
             margin: 20px auto;
             padding: 20px;
             background-color: white;
@@ -77,20 +76,11 @@
             bottom: 0;
             width: 100%;
         }
-        .tutors-list {
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            width: 90%;
-            max-width: 800px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .tutors-list ul {
+        .tutors-list ul, .students-list ul {
             list-style: none;
             padding: 0;
         }
-        .tutors-list li {
+        .tutors-list li, .students-list li {
             margin-bottom: 10px;
             padding: 10px;
             background-color: #f9f9f9;
@@ -104,6 +94,7 @@
     <nav>
         <a href="#home">Home</a>
         <a href="#tutors">Tutors Available</a>
+        <a href="#students">Students Available</a>
         <a href="#apply-tutor">Apply to Tutor</a>
         <a href="#find-tutor">Find a Tutor</a>
         <a href="#about">About</a>
@@ -134,7 +125,15 @@
     <section class="tutors-list" id="tutors">
         <h1>Tutors Available:</h1>
         <ul>
-             <P>No tutors available, be the first!</P>
+            <p>No tutors available, Why not be the first?</p>
+        </ul>
+    </section>
+
+    <!-- Students Available Section -->
+    <section class="students-list" id="students">
+        <h1>Students Available:</h1>
+        <ul>
+            <p>No students available, why not be the first?</p>
         </ul>
     </section>
 

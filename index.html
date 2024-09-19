@@ -8,26 +8,63 @@
         body {
             background-color: #f0f0f0;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-        h1 {
-            color: blue;
+        header {
+            background-color: #007BFF;
+            color: white;
             text-align: center;
+            padding: 20px 0;
         }
-        h2 {
-            color: green;
-            text-align: center;
+        header h1 {
+            margin: 0;
+        }
+        header h2 {
+            margin: 5px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
         .form-section {
             margin: 20px auto;
             padding: 20px;
             background-color: white;
             border-radius: 8px;
-            width: 50%;
+            width: 90%;
+            max-width: 800px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
         }
         iframe {
             border: 2px solid #ccc;
             border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            height: 600px;
+            display: block;
+            margin: 0 auto;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -35,32 +72,35 @@
     <!-- Header Section -->
     <header>
         <h1>Welcome to LebTutor</h1>
-        <center><img src="Leb Work (1).png" width="500" height="400"></center>
+        <img src="Leb Work (1).png" alt="LebTutor Logo">
         <h2>Connecting talents with the right opportunities</h2>
-        <hr>
     </header>
 
     <!-- Freelancer Submission Form Section -->
     <section class="form-section">
         <h1>Looking to tutor?</h1>
         <h2>Submit your application</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfLnAqGiwD_IOUi2V-tmgIlAqpkVzyK1QXeBHYgiNczgtbdw/viewform?embedded=true" width="400" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfLnAqGiwD_IOUi2V-tmgIlAqpkVzyK1QXeBHYgiNczgtbdw/viewform?embedded=true" frameborder="0">Loading…</iframe>
     </section>
-    <hr>
 
     <!-- Freelance Finder Form Section -->
     <section class="form-section">
         <h1>Looking for tutors?</h1>
         <h2>Submit your requirements</h2>
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDCe29aH8Goww5Ut4JQVXRthJkkyPP0t63oCOrklHf-tWvEA/viewform?embedded=true" width="400" height="600" frameborder="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDCe29aH8Goww5Ut4JQVXRthJkkyPP0t63oCOrklHf-tWvEA/viewform?embedded=true" frameborder="0">Loading…</iframe>
+    </section>
 
     <!-- Other Links Section -->
-        <h1><center>Other links:</center></h1>
-        <a href="https://les-news.github.io/About-Me/" target="_blank">Visit the creator's official website!</a>
-
-    <!-- About this website -->
-        <h1><center>All about this website:</center></h1>
-        <h2>This website was made by <a href="https://les-news.github.io/About-Me/" target="_blank">William Aktaa</a></h2> to solve the problem being the long process of finding a tutor. By submitting a form, you are aware and must comply to giving the creator 10% of the total you earned.</h2>
+    <section class="form-section">
+        <h1>Other links:</h1>
+        <p><a href="https://les-news.github.io/About-Me/" target="_blank">Visit the creator's official website!</a></p>
+        <h1>All about this website:</h1>
+        <h2>This website was created by <a href="https://les-news.github.io/About-Me/" target="_blank">William Aktaa</a> to simplify finding a tutor. By submitting a form, you agree to give the creator 10% of the total amount earned.</h2>
     </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 LebTutor. All rights reserved.</p>
+    </footer>
 </body>
 </html>

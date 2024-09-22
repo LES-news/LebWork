@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="Leb.png" type="image/png">
+    <link rel="icon" href="Leb Work (1).png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LebTutor connects students with tutors in Lebanon. Find a tutor or become one and earn while helping others succeed.">
-    <title>LebTutor - Your Gateway to Educational Success</title>
+    <title>LebTutor</title>
     <style>
         body {
-            background-color: #f7f9fc;
+            background-color: #f0f0f0;
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0 0 50px 0; /* Padding added to the bottom */
+            padding: 0;
         }
         header {
-            background-color: #4CAF50; /* Changed to a more visually appealing color */
-            color: white;
+            color: #333;
             text-align: center;
-            padding: 30px 0;
+            padding: 20px 0;
         }
-        header h1 {
+        header h1, header h2 {
             margin: 0;
-            font-size: 2.5em;
         }
-        header h2 {
-            margin: 5px 0;
-            font-size: 1.5em;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
         nav {
-            background-color: #333; /* Darker shade for better contrast */
+            background-color: #ffffff; /* White background */
             padding: 10px;
             text-align: center;
         }
         nav a {
-            color: #ffffff;
+            color: #333; /* Darker text color for visibility */
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
-            padding: 8px 15px;
-            border-radius: 4px;
-            transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #575757; /* Subtle hover effect */
+            text-decoration: underline;
         }
         .form-section, .tutors-list, .students-list {
-            margin: 30px auto 80px auto; /* Adds margin to the bottom */
+            margin: 20px auto;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: white;
             border-radius: 8px;
             width: 90%;
             max-width: 800px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            text-align: center;
         }
         h1, h2 {
-            color: #444;
+            text-align: center;
+            color: #333;
         }
         iframe {
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
             border-radius: 8px;
             width: 100%;
             max-width: 600px;
             height: 600px;
+            display: block;
             margin: 0 auto;
         }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
         footer {
-            background-color: #003366;
-            color: white;
+            background-color: #ffffff; /* White background */
+            color: #333; /* Darker text color for visibility */
             text-align: center;
             padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
-            height: 50px; /* Fixed height */
+        }
+        .tutors-list ul, .students-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .tutors-list li, .students-list li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #ddd;
         }
     </style>
 </head>
@@ -91,48 +104,46 @@
     <!-- Header Section -->
     <header id="home">
         <h1>Welcome to LebTutor</h1>
+        <img src="Leb Work (1).png" alt="LebTutor Logo">
         <h2>Connecting talents with the right opportunities</h2>
-        <img src="Leb.png" alt="LebTutor Logo">
     </header>
 
     <!-- Tutor Submission Form Section -->
     <section class="form-section" id="apply-tutor">
-        <h1>Become a Tutor</h1>
-        <p>Share your expertise and help students succeed. Earn extra income while making a difference!</p>
+        <h1>Looking to tutor?</h1>
+        <h2>Submit your application</h2>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfLnAqGiwD_IOUi2V-tmgIlAqpkVzyK1QXeBHYgiNczgtbdw/viewform?embedded=true" frameborder="0">Loading…</iframe>
     </section>
 
-    <!-- Student Finder Form Section -->
+    <!-- Freelance Finder Form Section -->
     <section class="form-section" id="find-tutor">
-        <h1>Find a Tutor</h1>
-        <p>Looking for a tutor to help you excel? Submit your requirements and connect with top tutors today!</p>
+        <h1>Looking for tutors?</h1>
+        <h2>Submit your requirements</h2>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdDCe29aH8Goww5Ut4JQVXRthJkkyPP0t63oCOrklHf-tWvEA/viewform?embedded=true" frameborder="0">Loading…</iframe>
     </section>
 
     <!-- Tutors Available Section -->
     <section class="tutors-list" id="tutors">
-        <h1>Available Tutors</h1>
-        <p>Explore our list of qualified tutors and find the perfect match for your learning needs.</p>
+        <h1>Tutors Available:</h1>
         <ul>
-            <li>No tutors available at the moment. Be the first to join our platform!</li>
+            <p>No tutors available, Why not be the first?</p>
         </ul>
     </section>
 
     <!-- Students Available Section -->
     <section class="students-list" id="students">
-        <h1>Available Students</h1>
-        <p>Find students who are looking for your expertise. Help them succeed and grow your skills.</p>
+        <h1>Students Available:</h1>
         <ul>
-            <li>No students available at the moment. Be the first to find a tutor today!</li>
+            <p>No students available, why not be the first?</p>
         </ul>
     </section>
 
     <!-- About Section -->
     <section class="form-section" id="about">
-        <h1>About LebTutor</h1>
-        <p>This website was created to connect talented tutors with students in need. Whether you're looking to earn extra income or find the right tutor, LebTutor is here to help. By using our platform, you agree to share a small percentage of your earnings to support our community growth. <a href="https://les-news.github.io/About-Me/" target="_blank">Learn more about the creator</a>.</p>
+        <h1>All about this website:</h1>
+        <h2>This website was created by <a href="https://les-news.github.io/About-Me/" target="_blank">William Aktaa</a> to simplify finding a tutor. By submitting a form, you agree to give the creator 30% of the total amount earned as a percentage of your earnings to support our community growth. Learn more about the creator.</h2>
     </section>
-
+    
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 LebTutor. All rights reserved.</p>

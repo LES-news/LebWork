@@ -175,9 +175,7 @@
     <section class="form-section" id="blog">
         <h1>Blog</h1>
         <h2>Latest Articles</h2>
-        <ul>
-            <li><a href="#">How to become a successful tutor</a></li>
-            <li><a href="#">Top 5 subjects in demand</a></li>
+        <ul
         </ul>
     </section>
 
@@ -190,18 +188,6 @@
     <footer>
         &copy; 2024 LebTutor - Connecting talents with opportunities
     </footer>
-
-    <script>
-        // Example search function
-        function searchTutors() {
-            const searchInput = document.getElementById('search-input').value.toLowerCase();
-            const tutorList = document.getElementById('tutor-list');
-            const tutors = tutorList.getElementsByTagName('li');
-
-            for (let i = 0; i < tutors.length; i++) {
-                const tutor = tutors[i];
-                const text = tutor.textContent.toLowerCase();
-                tutor.style.display = text.includes(searchInput) ? '' : 'none';
             }
         }
     </script>
